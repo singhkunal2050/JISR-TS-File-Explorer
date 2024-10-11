@@ -1,4 +1,72 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+/* File Explorer Container */
+.file-explorer {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* File Explorer Header */
+.file-explorer-header {
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+/* File/Folder Item Styles */
+.file-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.file-item:hover {
+  background-color: #f0f0f0;
+}
+
+.file-item.selected {
+  background-color: #e6f7ff;
+}
+
+.file-icon {
+  margin-right: 8px;
+}
+
+/* Folder-specific Styles */
+.folder-content {
+  padding-left: 20px;
+}
+
+/* Context Menu Styles */
+.context-menu {
+  position: fixed;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.context-menu button {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.context-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Hide the context menu when not in use */
+.hidden {
+  display: none;
 }
